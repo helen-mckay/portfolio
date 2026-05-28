@@ -1,0 +1,14 @@
+---
+const { data } = Astro.props;
+---
+
+<div class="portfolio-item">
+    <p>{data.name}</p>
+    <p>{data.role}</p>
+    <p>{data.year}</p>
+    <ul>
+        {data.tech.map((t:string) => <li>{t}</li>)}
+    </ul>
+    <a href={data.link}>Link</a>
+    <p>{data.story}</p>
+</div>

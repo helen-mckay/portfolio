@@ -1,6 +1,24 @@
 ---
-import Base from "../layouts/Base.astro"
+import Base from "../layouts/Base.astro";
+import {portfolio} from "../data.json";
+import PortfolioItem from "../components/PortfolioItem.astro";
 ---
 
 <Base title="Portfolio">
+	<section id="intro">
+		<h1 class="sr-only">Helen McKay, web developer in Houston, TX.</h1>
+		<p>Hey, I'm Helen. I'm a web developer in Houston, TX, making modern, lightweight websites for nonprofits, small creatives, and more.</p>
+		<p>I am open to new projects.</p>
+		<a href="#portfolio">My Work</a>
+	</section>
+	<section id="portfolio">
+		<h2>Portfolio</h2>
+		{portfolio.map(p => <PortfolioItem data={p}/>)}
+	</section>
 </Base>
+
+<style>
+	.sr-only {
+		display: none;
+	}
+</style>

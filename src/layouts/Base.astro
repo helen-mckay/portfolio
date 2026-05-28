@@ -13,6 +13,29 @@ import "../styles/global.css";
 		<title>Helen McKay | {title}</title>
 	</head>
 	<body>
-        <slot/>
+        <header>
+			<nav>
+				<div id="nav-links">
+					<a href="/">Portfolio</a>
+					<a href="/about">About</a>
+					<a href="/now">Now</a>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<slot/>
+		</main>
+		<footer>
+			<div id="footer-site-links">
+				<a href="/">Portfolio</a>
+				<a href="/about">About</a>
+				<a href="/now">Now</a>
+			</div>
+			<div id="footer-external-links">
+				<a href="https://github.com/helen-mckay">GitHub</a>
+				<a href="https://linkedin.com/in/helenmckaydev">LinkedIn</a>
+				<a href="/resume.pdf">Resume</a>
+			</div>
+		</footer>
 	</body>
 </html>

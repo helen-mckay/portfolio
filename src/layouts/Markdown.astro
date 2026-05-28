@@ -1,0 +1,8 @@
+---
+import Base from "./Base.astro";
+const { title } = Astro.props.frontmatter;
+---
+
+<Base title={title}>
+    <slot/>
+</Base>
