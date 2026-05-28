@@ -5,11 +5,11 @@ import PortfolioItem from "../components/PortfolioItem.astro";
 ---
 
 <Base title="Portfolio">
-	<section id="intro">
-		<h1 class="sr-only">Helen McKay, web developer in Houston, TX.</h1>
-		<p>Hey, I'm Helen. I'm a web developer in Houston, TX, making modern, lightweight websites for nonprofits, small creatives, and more.</p>
-		<p>I am open to new projects.</p>
-		<a href="#portfolio">My Work</a>
+	<section class="m-auto max-w-250 place-self-center h-200 flex flex-col place-content-center gap-4 px-2" id="intro">
+		<h1 class="sr-only">Helen McKay is a web developer in Houston, TX.</h1>
+		<p class="text-4xl/snug text-balance"><span>Helen McKay</span> is a web developer in Houston, TX making modern, lightweight websites for nonprofits, small creatives, and more.</p>
+		<p class="text-3xl/normal"><span>Open</span> for new projects.</p>
+		<a class="hidden" href="#portfolio">Work</a>
 	</section>
 	<section id="portfolio">
 		<h2>Portfolio</h2>
@@ -21,4 +21,18 @@ import PortfolioItem from "../components/PortfolioItem.astro";
 	.sr-only {
 		display: none;
 	}
+
+	#intro p {
+		color: var(--color-mist-300);
+	}
+
+	#intro p span {
+		font-weight: bold;
+		color: var(--color-mist-50);
+	}
+
+	#intro {
+		background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='60' height='60' patternTransform='scale(3) rotate(40)'><rect x='0' y='0' width='100%' height='100%' fill='oklch(14.8% 0.004 228.8)'/><path d='M10 60V30m10 0v30m10 0H0V30M50 0v30m-10 0V0M30 0h30v30M30 40h30m0 10H30m0-20h30v30H30zM0 10h30m0 10H0M0 0h30v30H0z'  stroke-width='5' stroke='oklch(37.8% 0.015 216)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-195,-351)' fill='url(%23a)'/></svg>") linear-gradient(green, pink);
+	}
+	
 </style>
