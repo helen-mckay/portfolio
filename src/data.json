@@ -1,0 +1,20 @@
+{
+    "portfolio": [
+        {
+            "year": 2026,
+            "name": "Portfolio",
+            "role": "Designer, Developer",
+            "tech": ["Astro"],
+            "link": "https://github.com",
+            "story": "Dirt simple Astro project with perfect scores on Lighthouse."
+        },
+        {
+            "year": 2024,
+            "name": "Blue Voter Guide",
+            "role": "Front-End Development Intern",
+            "tech": ["PHP", "HTML", "CSS", "JavaScript", "AWS"],
+            "link": "https://bluevoterguide.org",
+            "story": "Redid the Candidate and Endorser pages."
+        }
+    ]
+}
