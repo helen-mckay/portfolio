@@ -2,13 +2,38 @@
 const { data } = Astro.props;
 ---
 
-<div class="portfolio-item">
-    <p>{data.name}</p>
-    <p>{data.role}</p>
-    <p>{data.year}</p>
-    <ul>
-        {data.tech.map((t:string) => <li>{t}</li>)}
+<div class="portfolio-item p-8 rounded-md border border-mist-700 flex flex-col
+            w-full max-w-100 min-h-90">
+    <h3 class="font-bold">{data.name}</h3>
+    <div class="portfolio-item-subheading flex flex-col md:flex-row flex-wrap md:justify-between mb-2 border-b border-mist-300 pb-2">
+        <p class="text-mist-400 italic">{data.role}</p>
+        <p class="text-mist-300">{data.year}</p>
+    </div>
+    <p class="text-base/relaxed flex-1 text-mist-200">{data.story}</p>
+    <a target="_blank" rel="noopener noreferrer nofollow"
+        class="portfolio-item-link text-lg/tight px-4 py-2 rounded-md text-center my-2 uppercase" href={data.link}>{data.linkName}</a>
+    <ul class="flex flex-row flex-wrap gap-1 mt-2">
+        {data.tech.map((t:string) => <li class="text-sm rounded-full px-2 py-1 border-mist-600 border">{t}</li>)}
     </ul>
-    <a href={data.link}>Link</a>
-    <p>{data.story}</p>
 </div>
+
+<style>
+    .portfolio-item {
+        background-color: var(--color-mist-900);
+        transition: background-color ease 0.2s;
+    }
+
+    .portfolio-item:hover {
+        background-color: var(--color-mist-800);
+    }
+
+    .portfolio-item-link {
+        background-color:  var(--color-mist-50);
+        transition: background-color ease 0.2s;
+        color: var(--color-mist-900);
+    }
+
+    .portfolio-item-link:hover {
+        background-color: var(--color-mist-300);
+    }
+</style>
