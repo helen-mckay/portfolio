@@ -2,11 +2,39 @@
     "portfolio": [
         {
             "year": 2026,
-            "name": "Portfolio",
+            "name": "SciFi Movie Guy",
+            "role": "Developer",
+            "tech": ["Astro", "WordPress"],
+            "link": "https://scifimovieguy.com",
+            "linkName": "Live Site",
+            "story": "Headless WordPress with Astro frontend"
+        },
+        {
+            "year": "2026",
+            "name": "C.T. Martin",
             "role": "Designer, Developer",
             "tech": ["Astro"],
-            "link": "https://github.com",
-            "story": "Dirt simple Astro project with perfect scores on Lighthouse."
+            "link": "https://ctmartinart.com",
+            "linkName": "Live Site",
+            "story": "Art site for Houston-area mixed-media artist, C.T. Martin."
+        },
+        {
+            "year": "2025 - 2026",
+            "name": "Naurzine",
+            "role": "Designer, Developer",
+            "tech": ["React"],
+            "link": "https://naurzine.com",
+            "linkName": "Live Site",
+            "story": "Password-protected photo album with comments section."
+        },
+        {
+            "year": "2025 - 2026",
+            "name": "Permian Gulf Coast Coalition",
+            "role": "Website Helper",
+            "tech": ["HTML", "CSS", "JavaScript", "SquareSpace"],
+            "link": "https://permiangulfcoastcoalition.org",
+            "linkName": "Live Site",
+            "story": "Got site ready for launch. Tightened brand cohesion, SEO, accessibility."
         },
         {
             "year": 2024,
@@ -14,6 +42,7 @@
             "role": "Front-End Development Intern",
             "tech": ["PHP", "HTML", "CSS", "JavaScript", "AWS"],
             "link": "https://bluevoterguide.org",
+            "linkName": "Live Site",
             "story": "Redid the Candidate and Endorser pages."
         }
     ]
