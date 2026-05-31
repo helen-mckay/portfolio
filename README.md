@@ -1,2 +1,4 @@
 # Tech
 - Astro
+- Tailwind
+    - Typography
