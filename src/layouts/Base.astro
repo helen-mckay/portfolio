@@ -1,6 +1,7 @@
 ---
 const { title } = Astro.props;
 import NavLink from "../components/NavLink.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 ---
 
@@ -30,19 +31,7 @@ import "../styles/global.css";
 			<main class="p-4 min-h-screen flex flex-col">
 				<slot/>
 			</main>
-			<footer class="">
-				<div id="footer-site-links">
-					<a href="/">Portfolio</a>
-					<a href="/about">About</a>
-					<a href="/now">Now</a>
-				</div>
-				<div id="footer-external-links">
-					<a href="https://github.com/helen-mckay">GitHub</a>
-					<a href="https://linkedin.com/in/helenmckaydev">LinkedIn</a>
-					<a href="/resume.pdf">Resume</a>
-				</div>
-				<p>© Helen McKay, 2026. All Rights Reserved.</p>
-			</footer>
+			<Footer/>
 		</div>
 	</body>
 </html>
