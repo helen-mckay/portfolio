@@ -7,14 +7,18 @@ const { data } = Astro.props;
     <h3 class="font-bold">{data.name}</h3>
     <div class="portfolio-item-subheading flex flex-col md:flex-row flex-wrap md:justify-between mb-2 border-b border-mist-300 pb-2">
         <p class="text-mist-400 italic">{data.role}</p>
-        <p class="text-mist-300">{data.year}</p>
+        <p class="text-mist-400">{data.year}</p>
     </div>
     <p class="text-base/relaxed flex-1 text-mist-200">{data.story}</p>
-    <a target="_blank" rel="noopener noreferrer nofollow"
-        class="portfolio-item-link text-lg/tight px-4 py-2 rounded-md text-center my-2 uppercase" href={data.link}>{data.linkName}</a>
     <ul class="flex flex-row flex-wrap gap-1 mt-2">
-        {data.tech.map((t:string) => <li class="text-sm rounded-full px-2 py-1 border-mist-600 border">{t}</li>)}
+        {data.tech.map((t:string) => <li class="text-xs rounded-full px-2 py-1 border-mist-600 border">{t}</li>)}
     </ul>
+    <div class="portfolio-item-link-container mt-3 flex flex-col gap-1">
+        {data.link2 && <a target="_blank" rel="noopener noreferrer nofollow"
+            class="portfolio-item-link-secondary text-lg/tight px-4 py-2 rounded-md text-center uppercase" href={data.link2}>{data.link2Name}</a>}
+        <a target="_blank" rel="noopener noreferrer nofollow"
+        class="portfolio-item-link-primary text-lg/tight px-4 py-2 rounded-md text-center uppercase" href={data.link1}>{data.link1Name}</a>    
+</div>
 </div>
 
 <style>
@@ -27,13 +31,18 @@ const { data } = Astro.props;
         background-color: var(--color-mist-800);
     }
 
-    .portfolio-item-link {
+    .portfolio-item-link-primary {
         background-color:  var(--color-mist-50);
         transition: background-color ease 0.2s;
         color: var(--color-mist-900);
     }
 
-    .portfolio-item-link:hover {
+    .portfolio-item-link-secondary {
+        background-color: none;
+        border: 1px solid var(--color-mist-50);
+    }
+
+    .portfolio-item-link-primary:hover {
         background-color: var(--color-mist-300);
     }
 </style>

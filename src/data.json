@@ -2,20 +2,31 @@
     "portfolio": [
         {
             "year": 2026,
-            "name": "SciFi Movie Guy",
-            "role": "Developer",
-            "tech": ["Astro", "WordPress"],
-            "link": "https://scifimovieguy.com",
-            "linkName": "Live Site",
-            "story": "Headless WordPress with Astro frontend"
+            "name": "Escape Velocity Books",
+            "role": "Designer, Developer",
+            "tech": ["WordPress", "WooCommerce"],
+            "link1": "https://escapevelocitybooks.com",
+            "link1Name": "Live Site",
+            "story": "Branding, design, development, WooCommerce integration."
         },
         {
-            "year": "2026",
+            "year": 2026,
+            "name": "Monkey Dog Art Collective",
+            "role": "Designer, Developer",
+            "tech": ["Astro"],
+            "link1": "monkeydogart.com",
+            "link1Name": "Live Site",
+            "link2": "https://github.com",
+            "link2Name": "Code",
+            "story": "Design, Development"
+        },
+        {
+            "year": 2026,
             "name": "C.T. Martin",
             "role": "Designer, Developer",
             "tech": ["Astro"],
-            "link": "https://ctmartinart.com",
-            "linkName": "Live Site",
+            "link1": "https://ctmartinart.com",
+            "link1Name": "Live Site",
             "story": "Art site for Houston-area mixed-media artist, C.T. Martin."
         },
         {
@@ -23,17 +34,17 @@
             "name": "Naurzine",
             "role": "Designer, Developer",
             "tech": ["React"],
-            "link": "https://naurzine.com",
-            "linkName": "Live Site",
+            "link1": "https://naurzine.com",
+            "link1Name": "Live Site",
             "story": "Password-protected photo album with comments section."
         },
         {
-            "year": "2025 - 2026",
+            "year": "2025 - Present",
             "name": "Permian Gulf Coast Coalition",
             "role": "Website Helper",
             "tech": ["HTML", "CSS", "JavaScript", "SquareSpace"],
-            "link": "https://permiangulfcoastcoalition.org",
-            "linkName": "Live Site",
+            "link1": "https://permiangulfcoastcoalition.org",
+            "link1Name": "Live Site",
             "story": "Got site ready for launch. Tightened brand cohesion, SEO, accessibility."
         },
         {
@@ -41,8 +52,8 @@
             "name": "Blue Voter Guide",
             "role": "Front-End Development Intern",
             "tech": ["PHP", "HTML", "CSS", "JavaScript", "AWS"],
-            "link": "https://bluevoterguide.org",
-            "linkName": "Live Site",
+            "link1": "https://bluevoterguide.org",
+            "link1Name": "Live Site",
             "story": "Redid the Candidate and Endorser pages."
         }
     ]
