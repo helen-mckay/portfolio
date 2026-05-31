@@ -14,7 +14,7 @@
             "name": "Monkey Dog Art Collective",
             "role": "Designer, Developer",
             "tech": ["Astro"],
-            "link1": "monkeydogart.com",
+            "link1": "https://monkeydogart.com",
             "link1Name": "Live Site",
             "link2": "https://github.com",
             "link2Name": "Code",
