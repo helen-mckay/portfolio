@@ -2,16 +2,16 @@
 const { data } = Astro.props;
 ---
 
-<div class="portfolio-item p-8 rounded-md border border-mist-700 flex flex-col
+<div class="portfolio-item p-8 rounded-md border border-zinc-700 flex flex-col
             w-full max-w-100 min-h-90">
     <h3 class="font-bold">{data.name}</h3>
-    <div class="portfolio-item-subheading flex flex-col md:flex-row flex-wrap md:justify-between mb-2 border-b border-mist-300 pb-2">
-        <p class="text-mist-400 italic">{data.role}</p>
-        <p class="text-mist-400">{data.year}</p>
+    <div class="portfolio-item-subheading flex flex-col md:flex-row flex-wrap md:justify-between mb-2 border-b border-zinc-300 pb-2">
+        <p class="text-zinc-400 italic">{data.role}</p>
+        <p class="text-zinc-400">{data.year}</p>
     </div>
-    <p class="text-base/relaxed flex-1 text-mist-200">{data.story}</p>
+    <p class="text-base/relaxed flex-1 text-zinc-200">{data.story}</p>
     <ul class="flex flex-row flex-wrap gap-1 mt-2">
-        {data.tech.map((t:string) => <li class="text-xs rounded-full px-2 py-1 border-mist-600 border">{t}</li>)}
+        {data.tech.map((t:string) => <li class="text-xs rounded-full px-2 py-1 border-zinc-600 border">{t}</li>)}
     </ul>
     <div class="portfolio-item-link-container mt-3 flex flex-col gap-1">
         {data.link2 && <a target="_blank" rel="noopener noreferrer nofollow"
@@ -23,32 +23,32 @@ const { data } = Astro.props;
 
 <style>
     .portfolio-item {
-        background-color: var(--color-mist-900);
+        background-color: var(--color-zinc-900);
         transition: background-color ease 0.2s;
     }
 
     .portfolio-item:hover {
-        background-color: var(--color-mist-800);
+        background-color: var(--color-zinc-800);
     }
 
     .portfolio-item-link-primary {
-        background-color:  var(--color-mist-50);
+        background-color:  var(--color-zinc-50);
         transition: background-color ease 0.2s;
-        color: var(--color-mist-950);
+        color: var(--color-zinc-950);
     }
 
     .portfolio-item-link-secondary {
         background-color: none;
-        border: 1px solid var(--color-mist-50);
+        border: 1px solid var(--color-zinc-50);
         transition: background-color ease 0.2s;
     }
 
     .portfolio-item-link-primary:hover {
-        background-color: var(--color-mist-200);
+        background-color: var(--color-zinc-200);
     }
 
     .portfolio-item-link-secondary:hover {
-        background-color: var(--color-mist-950);
+        background-color: var(--color-zinc-950);
     }
     
 </style>
