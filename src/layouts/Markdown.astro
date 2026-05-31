@@ -1,8 +1,12 @@
 ---
 import Base from "./Base.astro";
 const { title } = Astro.props.frontmatter;
+
+const proseClasses = "prose prose-zinc prose-invert prose-h1:text-xl/tight prose-h2:text-base/tight prose-p:text-sm/relaxed";
 ---
 
 <Base title={title}>
-    <slot/>
+    <div class={proseClasses + " " + " mt-18 place-self-center w-full max-w-220"}>
+        <slot/>
+    </div>
 </Base>
