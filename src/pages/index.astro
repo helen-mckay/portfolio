@@ -15,6 +15,7 @@ import PortfolioItem from "../components/PortfolioItem.astro";
 				  md:text-4xl/normal lg:text-5xl/tight"><span>Open</span> to new projects.</p>
 	</section>
 	<section id="portfolio" class="grid max-w-250 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-self-center gap-2 md:gap-3 md:mx-2">
+		<h2 class="sr-only">Portfolio</h2>
 		{portfolio.map(p => <PortfolioItem data={p}/>)}
 	</section>
 </Base>
