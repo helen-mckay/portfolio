@@ -5,7 +5,7 @@ import PortfolioItem from "../components/PortfolioItem.astro";
 ---
 
 <Base title="Portfolio">
-	<section id="intro" class="m-auto max-w-250 h-150 place-self-center flex flex-col place-content-center gap-4 px-2
+	<section id="intro" class="m-auto max-w-250 h-170 place-self-center flex flex-col place-content-center gap-4 px-2
 							   sm:px-4 md:px-8 lg:px-18 lg:gap-8" >
 		<h1 class="sr-only">Helen McKay is a web developer in Houston, TX.</h1>
 		<p class="text-3xl/tight text-balance
@@ -14,15 +14,23 @@ import PortfolioItem from "../components/PortfolioItem.astro";
 				  sm:text-3xl/normal
 				  md:text-4xl/normal lg:text-5xl/tight"><span>Open</span> to new projects.</p>
 	</section>
-	<section id="portfolio" class="grid max-w-250 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-self-center gap-2 md:gap-3 md:mx-2">
-		<h2 class="sr-only">Portfolio</h2>
-		{portfolio.map(p => <PortfolioItem data={p}/>)}
+	<section id="portfolio" class="place-self-center max-w-250">
+		<h2 class="uppercase text-lg/tight lg:text-xl/tight mb-4 font-bold tracking-wide">Portfolio</h2>
+		<div id="portfolio-content" class="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3">
+			{portfolio.map(p => <PortfolioItem data={p}/>)}
+		</div>
 	</section>
 </Base>
 
 <style>
 	.sr-only {
-		display: none;
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
 	}
 
 	#intro p {
