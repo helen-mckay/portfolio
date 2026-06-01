@@ -2,55 +2,55 @@
 const { data } = Astro.props;
 ---
 
-<div class="portfolio-item p-8 rounded-md border border-zinc-700 bg-zinc-900/60 hover:bg-zinc-800/85 flex flex-col
-            w-full max-w-100 min-h-90">
-    <h3 class="font-bold">{data.name}</h3>
-    <div class="portfolio-item-subheading flex flex-col md:flex-row flex-wrap md:justify-between mb-2 border-b border-zinc-300 pb-2">
-        <p class="text-zinc-400 italic">{data.role}</p>
-        <p class="text-zinc-400">{data.year}</p>
-    </div>
-    <p class="text-base/relaxed flex-1 text-zinc-200">{data.story}</p>
-    <ul class="flex flex-row flex-wrap gap-1 mt-2">
-        {data.tech.map((t:string) => <li class="text-xs rounded-full px-2 py-1 border-zinc-600 border">{t}</li>)}
-    </ul>
-    <div class="portfolio-item-link-container mt-3 flex flex-col gap-1">
-        {data.link2 && <a target="_blank" rel="noopener noreferrer nofollow"
-            class="portfolio-item-link portfolio-item-link-secondary text-lg/tight px-4 py-2 rounded-md text-center uppercase" href={data.link2}>{data.link2Name}</a>}
-        <a target="_blank" rel="noopener noreferrer nofollow"
-        class="portfolio-item-link portfolio-item-link-primary text-lg/tight px-4 py-2 rounded-md text-center uppercase" href={data.link1}>{data.link1Name}</a>    
-</div>
+<div class="portfolio-item flex min-h-90 w-full max-w-100 flex-col rounded-md border border-zinc-700 bg-zinc-900/60 p-8 hover:bg-zinc-800/85">
+  <h3 class="font-bold">{data.name}</h3>
+  <div class="portfolio-item-subheading mb-2 flex flex-col flex-wrap border-b border-zinc-300 pb-2 md:flex-row md:justify-between">
+    <p class="text-zinc-400 italic">{data.role}</p>
+    <p class="text-zinc-400">{data.year}</p>
+  </div>
+  <p class="flex-1 text-base/relaxed text-zinc-200">{data.story}</p>
+  <ul class="mt-2 flex flex-row flex-wrap gap-1">
+    {data.tech.map((t:string) =>
+    <li class="rounded-full border border-zinc-600 px-2 py-1 text-xs">{t}</li>
+    )}
+  </ul>
+  <div class="portfolio-item-link-container mt-3 flex flex-col gap-1">
+    {data.link2 &&
+    <a target="_blank" rel="noopener noreferrer nofollow" class="portfolio-item-link portfolio-item-link-secondary rounded-md px-4 py-2 text-center text-lg/tight uppercase" href={data.link2}>{data.link2Name}</a>
+    }
+    <a target="_blank" rel="noopener noreferrer nofollow" class="portfolio-item-link portfolio-item-link-primary rounded-md px-4 py-2 text-center text-lg/tight uppercase" href={data.link1}>{data.link1Name}</a>
+  </div>
 </div>
 
 <style>
+  .portfolio-item {
+    transition: background-color ease 0.2s;
+    opacity: 0;
+  }
+
+  .portfolio-item-link-primary {
+    background-color: var(--color-zinc-50);
+    transition: background-color ease 0.2s;
+    color: var(--color-zinc-950);
+  }
+
+  .portfolio-item-link-secondary {
+    background-color: none;
+    border: 1px solid var(--color-zinc-50);
+    transition: background-color ease 0.2s;
+  }
+
+  .portfolio-item-link-primary:hover {
+    background-color: var(--color-zinc-200);
+  }
+
+  .portfolio-item-link-secondary:hover {
+    background-color: var(--color-zinc-950);
+  }
+
+  @media screen and (prefers-reduced-motion: reduce) {
     .portfolio-item {
-        transition: background-color ease 0.2s;
-        opacity: 0;
+      opacity: 1;
     }
-
-    .portfolio-item-link-primary {
-        background-color:  var(--color-zinc-50);
-        transition: background-color ease 0.2s;
-        color: var(--color-zinc-950);
-    }
-
-    .portfolio-item-link-secondary {
-        background-color: none;
-        border: 1px solid var(--color-zinc-50);
-        transition: background-color ease 0.2s;
-    }
-
-    .portfolio-item-link-primary:hover {
-        background-color: var(--color-zinc-200);
-    }
-
-    .portfolio-item-link-secondary:hover {
-        background-color: var(--color-zinc-950);
-    }
-
-    @media screen and (prefers-reduced-motion: ) {
-        .portfolio-item {
-            opacity: 1;
-        }
-    }
-    
+  }
 </style>

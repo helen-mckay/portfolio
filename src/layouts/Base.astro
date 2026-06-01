@@ -18,21 +18,19 @@ import "../styles/global.css";
 	<body>
 		<div id="wrapper" class="min-w-(--breakpoint-xs)">
 			<header class="flex">
-				<nav class="m-auto max-w-250 w-full flex place-content-between p-3
-							sm:p-4 md:pt-8 md:px-6 align-baseline">
-					<h1 class="font-bold text-base/normal md:text-lg/normal text-(--accent)"><a title="Helen McKay" href="/">H</a></h1>
-					<div id="nav-link-container" class="flex gap-3
-							 sm:gap-4">
-						<NavLink href="/" name="Portfolio"/>
-						<NavLink href="/about" name="About"/>
-						<NavLink href="/now" name="Now"/>
+				<nav class="m-auto flex w-full max-w-250 place-content-between p-3 align-baseline sm:p-4 md:px-6 md:pt-8">
+					<h1 class="text-base/normal font-bold text-(--accent) md:text-lg/normal"><a title="Helen McKay" href="/">H</a></h1>
+					<div id="nav-link-container" class="flex gap-3 sm:gap-4">
+						<NavLink href="/" name="Portfolio" />
+						<NavLink href="/about" name="About" />
+						<NavLink href="/now" name="Now" />
 					</div>
 				</nav>
 			</header>
-			<main class="p-4 min-h-screen flex flex-col">
-				<slot/>
+			<main class="flex min-h-screen flex-col p-4">
+				<slot />
 			</main>
-			<Footer/>
+			<Footer />
 		</div>
 	</body>
 </html>
@@ -40,6 +38,6 @@ import "../styles/global.css";
 <style>
 	#wrapper {
 		background-color: #09090b;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2327272a' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2327272a' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 	}
 </style>
