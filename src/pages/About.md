@@ -3,21 +3,26 @@ layout: '../layouts/Markdown.astro'
 title: "About"
 ---
 # About me
-I first fell in love with web development by hacking Tumblr themes in middle school. That joy's never left me.
+I first fell in love with web development by hacking Tumblr themes in middle school. I've been making websites ever since, and the joy's never left me. I graduated in May 2025 with a degree in Computer Science.
 
-These days I use mostly build with Astro and a sprinkling of React. 
+These days, I mostly build with Astro and a sprinkling of React. I am freelancing, but am also looking for full-time employment. [Here's my resume.](/resume.pdf)
 
 ## Web dev adventures
-| Years | Org | Story | Tech |
-|---|---|---| --- |
-| 2026 - Present | Freelance | Making sites for nonprofits and small creatives | Astro, HTML, CSS, JS, React, Tailwind
-| 2025 - Present | Permain Gulf Coast Coaltion | Doing what I can to improve the accessibility, design, and performance of their Squarespace site. Got the new site ready for launch! | HTML, CSS, JS
-| 2024 | Blue Voter Guide | Redid the Candidate and Endorser Pages | PHP, HTML, CSS, JS
-| 2022 - 2023 | Cougar CS | Built login components for admin portal of Cougar CS website | React, TypeScript
-| 2017 | Amigos de las Americas | Audited site for performance and design issues. Built and styled the 2018 AMIGOS Summer Programs application | HTML, CSS, WordPress, Salesforce
+| | |
+|---|---|
+**Freelance**<br/>*(2026 - Present)* | Making sites for nonprofits and small creatives.
+**Permian Gulf Coast Coaltion**<br/>*(2025 - Present)* | Doing what I can to improve the accessibility, design, and performance of their Squarespace site. Got the new site ready for launch!
+**Blue Voter Guide**<br/>*(2024)* | Redid the Candidate and Endorser Pages (PHP, HTML, CSS, JS).
+**Cougar CS**<br/>*(2022 - 2023)* | Built login components (React, TypeScript) for admin portal of Cougar CS website.
+**Amigos de las Americas**<br/>*(2017)* | Audited site for performance and design issues. Built and styled the 2018 AMIGOS Summer Programs application (WordPress, Salesforce).
 
 ## Side adventures
 I keep falling into adventures outside of web development. I don't mind it, but I'd like web development to be my Main adventure for the time being!
-| Years | Org | Role | Story |
-|--- | --- | --- | --- |
-2025 - 2026 | Leticia Gutierrez Campaign (U.S. House, TX-09) | Campaign Manager | Managed core team and volunteers. Managed software infrastructure (NGP VAN, Act Blue, Scale to Win, Action Network). Won the Democratic nomination.
+| | |
+|--- | --- |
+**Leticia Gutierrez Campaign<br/>(U.S. House, TX-09)**<br/>Campaign Manager<br/>*(2025 - 2026)*| Managed core team and volunteers. Managed software infrastructure (NGP VAN, Act Blue, Scale to Win, Action Network). Won the Democratic nomination.
+
+## Miscellaneous adventures
+I'm passionate about environmental justice and mutual aid. I'm more than happy to lend my code or project management experience to aid projects in those spaces (feel free to reach out if there's a project I can help with!)
+
+When I'm not making websites, I can be found writing letters to my friends while watching *Columbo.* 
