@@ -61,6 +61,12 @@ import PortfolioItem from "../components/PortfolioItem.astro";
 		{ amount: 0.25 }
 		);
 
+		hover(".portfolio-item", (element) => {
+			animate(element, {scale: 1.05});
+
+			return () => animate(element, {scale: 1});
+		})
+
 		hover(".portfolio-item-link", (element) => {
 			animate(element, { scale: 1.05});
 
