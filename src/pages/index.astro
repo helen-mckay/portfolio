@@ -42,3 +42,36 @@ import PortfolioItem from "../components/PortfolioItem.astro";
 		color: var(--color-zinc-50);
 	}	
 </style>
+
+<script>
+    import { animate, stagger, inView, prefersReducedMotion, hover, press } from "motion";
+
+	if (!prefersReducedMotion.current?.valueOf)
+	{
+		inView(
+		"#portfolio-content",
+		(element) => {
+			animate(element, { opacity: [0, 1], y: [50, 0] }, { ease: [0.39, 0.24, 0.3, 1], duration: 1 });
+
+			const cards = element.querySelectorAll(".portfolio-item");
+			if (cards.length > 0) {
+			animate(cards, { opacity: [0, 1], y: [25, 0] }, { type: "spring", delay: stagger(0.25, { startDelay: 0.25 }) });
+			}
+		},
+		{ amount: 0.25 }
+		);
+
+		hover(".portfolio-item-link", (element) => {
+			animate(element, { scale: 1.05});
+
+			return () => animate(element, {scale: 1});
+		});
+
+		press(".portfolio-item-link", (element) => {
+			animate(element, {scale: 0.95});
+
+			return () => animate(element, {scale: 1})
+		});
+	}
+    
+</script>

@@ -15,21 +15,17 @@ const { data } = Astro.props;
     </ul>
     <div class="portfolio-item-link-container mt-3 flex flex-col gap-1">
         {data.link2 && <a target="_blank" rel="noopener noreferrer nofollow"
-            class="portfolio-item-link-secondary text-lg/tight px-4 py-2 rounded-md text-center uppercase" href={data.link2}>{data.link2Name}</a>}
+            class="portfolio-item-link portfolio-item-link-secondary text-lg/tight px-4 py-2 rounded-md text-center uppercase" href={data.link2}>{data.link2Name}</a>}
         <a target="_blank" rel="noopener noreferrer nofollow"
-        class="portfolio-item-link-primary text-lg/tight px-4 py-2 rounded-md text-center uppercase" href={data.link1}>{data.link1Name}</a>    
+        class="portfolio-item-link portfolio-item-link-primary text-lg/tight px-4 py-2 rounded-md text-center uppercase" href={data.link1}>{data.link1Name}</a>    
 </div>
 </div>
 
 <style>
     .portfolio-item {
-        /* background-color: var(--color-zinc-900); */
         transition: background-color ease 0.2s;
+        opacity: 0;
     }
-
-    /* .portfolio-item:hover {
-        background-color: var(--color-zinc-800);
-    } */
 
     .portfolio-item-link-primary {
         background-color:  var(--color-zinc-50);
@@ -49,6 +45,12 @@ const { data } = Astro.props;
 
     .portfolio-item-link-secondary:hover {
         background-color: var(--color-zinc-950);
+    }
+
+    @media screen and (prefers-reduced-motion: ) {
+        .portfolio-item {
+            opacity: 1;
+        }
     }
     
 </style>
