@@ -1,5 +1,5 @@
 ---
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 import NavLink from "../components/NavLink.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
@@ -12,7 +12,7 @@ import "../styles/global.css";
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="Helen McKay is a web developer in Houston, TX." />
+		<meta name="description" content={description} />
 		<title>Helen McKay | {title}</title>
 	</head>
 	<body>

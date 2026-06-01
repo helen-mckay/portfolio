@@ -1,6 +1,7 @@
 ---
 layout: '../layouts/Markdown.astro'
 title: "Now"
+description: "Here's a look at what Helen McKay is up to now."
 ---
 # What I'm up to now
 
