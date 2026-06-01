@@ -48,24 +48,22 @@ import PortfolioItem from "../components/PortfolioItem.astro";
 
 	if (!prefersReducedMotion.current?.valueOf)
 	{
-		inView(
-		"#portfolio-content",
-		(element) => {
-			animate(element, { opacity: [0, 1], y: [50, 0] }, { ease: [0.39, 0.24, 0.3, 1], duration: 1 });
+		inView("#portfolio-content", (element) => {
+			animate(element, {opacity: 1, y: [50, 0]});
 
 			const cards = element.querySelectorAll(".portfolio-item");
-			if (cards.length > 0) {
-			animate(cards, { opacity: [0, 1], y: [25, 0] }, { type: "spring", delay: stagger(0.25, { startDelay: 0.25 }) });
+
+			if (cards.length > 0)
+			{
+				animate(cards, {opacity: 1, y: [25, 0]}, {type: "spring", delay: stagger(0.25, {startDelay: 0.25})});
 			}
-		},
-		{ amount: 0.25 }
-		);
+		})
 
 		hover(".portfolio-item", (element) => {
 			animate(element, {scale: 1.05});
 
 			return () => animate(element, {scale: 1});
-		})
+		});
 
 		hover(".portfolio-item-link", (element) => {
 			animate(element, { scale: 1.05});
