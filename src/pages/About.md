@@ -6,7 +6,9 @@ description: "Helen McKay is an experienced web developer in Houston, TX."
 # About me
 I first fell in love with web development by hacking Tumblr themes in middle school. I've been making websites ever since, and the joy's never left me. I graduated in May 2025 with a degree in Computer Science.
 
-These days, I mostly build with Astro and a sprinkling of React. I am freelancing, but am also looking for full-time employment. [Here's my resume.](/resume.pdf)
+These days, I mostly build with Astro and a sprinkling of React. I am freelancing, but am also looking for full-time employment. 
+
+<!-- [Here's my resume.](/resume.pdf) -->
 
 ## Web dev adventures
 | Adventure | Details |
