@@ -23,6 +23,6 @@ I keep falling into adventures outside of web development. I don't mind it, but 
 **Leticia Gutierrez Campaign<br/>(U.S. House, TX-09)**<br/>Campaign Manager<br/>*(2025 - 2026)*| Managed core team and volunteers. Managed software infrastructure (NGP VAN, Act Blue, Scale to Win, Action Network). Won the Democratic nomination.
 
 ## Miscellaneous adventures
-I'm passionate about environmental justice and mutual aid. I'm more than happy to lend my code or project management experience to aid projects in those spaces (feel free to reach out if there's a project I can help with!)
+I'm passionate about environmental justice and mutual aid. I'm more than happy to lend my coding or project management experience to lift up work in those spaces (feel free to reach out if there's a project I can help with!)
 
 When I'm not making websites, I can be found writing letters to my friends while watching *Columbo.* 
