@@ -3,7 +3,7 @@
 const pathname = new URL(Astro.request.url).pathname;
 const { href, name } = Astro.props;
 
-const classes = "uppercase tracking-wider text-base/normal sm:text-lg/normal";
+const classes = "navlink uppercase tracking-wider text-base/normal sm:text-lg/normal";
 ---
 
 <a href={href} class={classes + " " + (pathname === href ? "active" : "inactive")}>{name}</a>
