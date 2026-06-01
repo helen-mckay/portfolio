@@ -7,7 +7,7 @@
             "tech": ["HTML", "CSS", "JavaScript", "SquareSpace"],
             "link1": "https://permiangulfcoastcoalition.org",
             "link1Name": "Live Site",
-            "story": "Got site ready for launch. Tightened brand cohesion, SEO, accessibility."
+            "story": "Prepared PGCC's new site for launch. Improved branding, SEO, accessibility."
         },
         {
             "year": 2024,
@@ -16,7 +16,7 @@
             "tech": ["PHP", "HTML", "CSS", "JavaScript", "AWS"],
             "link1": "https://bluevoterguide.org",
             "link1Name": "Live Site",
-            "story": "Redid the Candidate and Endorser pages."
+            "story": "Redid the Candidate and Endorser pages, used by millions to plan their ballots."
         }
     ]
 }
