@@ -9,7 +9,7 @@ I first fell in love with web development by hacking Tumblr themes in middle sch
 These days, I mostly build with Astro and a sprinkling of React. I am freelancing, but am also looking for full-time employment. [Here's my resume.](/resume.pdf)
 
 ## Web dev adventures
-| | |
+| Adventure | Details |
 |---|---|
 **Freelance**<br/>*(2026 - Present)* | Making sites for nonprofits and small creatives.
 **Permian Gulf Coast Coaltion**<br/>*(2025 - Present)* | Doing what I can to improve the accessibility, design, and performance of their Squarespace site. Got the new site ready for launch!
@@ -19,7 +19,7 @@ These days, I mostly build with Astro and a sprinkling of React. I am freelancin
 
 ## Side adventures
 I keep falling into adventures outside of web development. I don't mind it, but I'd like web development to be my Main adventure for the time being!
-| | |
+| Adventures | Details |
 |--- | --- |
 **Leticia Gutierrez Campaign<br/>(U.S. House, TX-09)**<br/>Campaign Manager<br/>*(2025 - 2026)*| Managed core team and volunteers. Managed software infrastructure (NGP VAN, Act Blue, Scale to Win, Action Network). Won the Democratic nomination.
 
