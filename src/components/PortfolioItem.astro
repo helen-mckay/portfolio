@@ -2,7 +2,7 @@
 const { data } = Astro.props;
 ---
 
-<div class="portfolio-item p-8 rounded-md border border-zinc-700 flex flex-col
+<div class="portfolio-item p-8 rounded-md border border-zinc-700 bg-zinc-900/60 hover:bg-zinc-800/85 flex flex-col
             w-full max-w-100 min-h-90">
     <h3 class="font-bold">{data.name}</h3>
     <div class="portfolio-item-subheading flex flex-col md:flex-row flex-wrap md:justify-between mb-2 border-b border-zinc-300 pb-2">
@@ -23,13 +23,13 @@ const { data } = Astro.props;
 
 <style>
     .portfolio-item {
-        background-color: var(--color-zinc-900);
+        /* background-color: var(--color-zinc-900); */
         transition: background-color ease 0.2s;
     }
 
-    .portfolio-item:hover {
+    /* .portfolio-item:hover {
         background-color: var(--color-zinc-800);
-    }
+    } */
 
     .portfolio-item-link-primary {
         background-color:  var(--color-zinc-50);
