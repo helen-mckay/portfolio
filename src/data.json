@@ -1,44 +1,6 @@
 {
     "portfolio": [
         {
-            "year": 2026,
-            "name": "Escape Velocity Books",
-            "role": "Designer, Developer",
-            "tech": ["WordPress", "WooCommerce"],
-            "link1": "https://escapevelocitybooks.com",
-            "link1Name": "Live Site",
-            "story": "Branding, design, development, WooCommerce integration."
-        },
-        {
-            "year": 2026,
-            "name": "Monkey Dog Art Collective",
-            "role": "Designer, Developer",
-            "tech": ["Astro"],
-            "link1": "https://monkeydogart.com",
-            "link1Name": "Live Site",
-            "link2": "https://github.com",
-            "link2Name": "Code",
-            "story": "Design, Development"
-        },
-        {
-            "year": 2026,
-            "name": "C.T. Martin",
-            "role": "Designer, Developer",
-            "tech": ["Astro"],
-            "link1": "https://ctmartinart.com",
-            "link1Name": "Live Site",
-            "story": "Art site for Houston-area mixed-media artist, C.T. Martin."
-        },
-        {
-            "year": "2025 - 2026",
-            "name": "Naurzine",
-            "role": "Designer, Developer",
-            "tech": ["React"],
-            "link1": "https://naurzine.com",
-            "link1Name": "Live Site",
-            "story": "Password-protected photo album with comments section."
-        },
-        {
             "year": "2025 - Present",
             "name": "Permian Gulf Coast Coalition",
             "role": "Website Helper",
