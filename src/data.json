@@ -10,9 +10,20 @@
             "story": "Prepared PGCC's new site for launch. Improved branding, SEO, accessibility."
         },
         {
+            "year": 2025,
+            "name": "Photo Album, v1",
+            "role": "Designer, Developer",
+            "tech": ["Astro", "Tailwind", "Clerk", "Turso", "Pages CMS"],
+            "link1": "https://photoalbum.helenmckay.dev",
+            "link1Name": "Live Site",
+            "link2": "https://github.com",
+            "link2Name": "Code",
+            "story": "Password-protected photo album with comments section. Showcase version of a project I build for my friend. Username: 'site' Password: 'hihelen-s' ."
+            },
+        {
             "year": 2024,
             "name": "Blue Voter Guide",
-            "role": "Front-End Development Intern",
+            "role": "Frontend Development Intern",
             "tech": ["PHP", "HTML", "CSS", "JavaScript", "AWS"],
             "link1": "https://bluevoterguide.org",
             "link1Name": "Live Site",
