@@ -8,7 +8,7 @@ I first fell in love with web development by hacking Tumblr themes in middle sch
 
 These days, I mostly build with Astro and a sprinkling of React. I am freelancing, but am also looking for full-time employment. 
 
-<!-- [Here's my resume.](/resume.pdf) -->
+[Here's my resume.](/HelenMcKayResume.pdf)
 
 ## Web dev adventures
 | Adventure | Details |
