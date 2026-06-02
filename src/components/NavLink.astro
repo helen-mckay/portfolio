@@ -5,11 +5,23 @@ const { href, name } = Astro.props;
 
 const classes = "navlink uppercase tracking-wider text-base/normal sm:text-lg/normal";
 
-console.log("pathname: " + pathname);
-console.log("href: " + href);
+const linkStatus = () => {
+    if (pathname === href)
+    {
+        return ("active");
+    }
+    else if (pathname === (href + "/"))
+    {
+        return "active";
+    }
+    else
+    {
+        return "inactive";
+    }
+}
 ---
 
-<a href={href} class={classes + " " + (pathname === href ? "active" : "inactive")}>{name}</a>
+<a href={href} class={classes + " " + (linkStatus())}>{name}</a>
 
 <style>
     .active {
