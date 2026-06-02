@@ -33,14 +33,29 @@ import PortfolioItem from "../components/PortfolioItem.astro";
 		width: 1px;
 	}
 
+	#intro {
+		opacity: 0;
+	}
+
 	#intro p {
 		color: var(--color-zinc-300);
+		opacity: 0;
 	}
 
 	#intro p span {
 		font-weight: bold;
 		color: var(--color-zinc-50);
 	}	
+
+	@media screen and (prefers-reduced-motion: reduce) {
+		#intro {
+			opacity: 1;
+		}
+
+		#intro p {
+			opacity: 1;
+		}
+	}
 </style>
 
 <script>
@@ -48,6 +63,18 @@ import PortfolioItem from "../components/PortfolioItem.astro";
 
 	if (!prefersReducedMotion.current?.valueOf)
 	{
+		inView("#intro", (element) => {
+			animate(element, {opacity: 1, x: [200, 0]}, {type: "spring", duration: 0.75});
+
+			const introP = element.querySelectorAll("#intro p");
+
+			if (introP.length > 0)
+			{
+				animate(introP, {opacity: 1, x: [100, 0]}, {type: "spring", delay: stagger(0.25, {startDelay: 0.25})});
+			}
+		});	
+
+
 		inView("#portfolio-content", (element) => {
 			animate(element, {opacity: 1, y: [50, 0]});
 
