@@ -1,9 +1,12 @@
 ---
 // check current path
-const pathname = new URL(Astro.request.url).pathname;
+const pathname = Astro.url.pathname;
 const { href, name } = Astro.props;
 
 const classes = "navlink uppercase tracking-wider text-base/normal sm:text-lg/normal";
+
+console.log("pathname: " + pathname);
+console.log("href: " + href);
 ---
 
 <a href={href} class={classes + " " + (pathname === href ? "active" : "inactive")}>{name}</a>
