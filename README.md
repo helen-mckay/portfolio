@@ -2,7 +2,7 @@
 
 My web developer portfolio. Kept overcomplicating it for myself, so I forced myself to make this one dirt simple so I'd get out of my own way.
 
-3/4 perfect scores on lighthouse.
+3/4 perfect scores on Lighthouse.
 
 ## Stack
 - Astro
