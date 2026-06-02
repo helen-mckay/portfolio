@@ -16,7 +16,7 @@
             "tech": ["Astro", "Tailwind", "Clerk", "Turso", "Pages CMS"],
             "link1": "https://photoalbum.helenmckay.dev",
             "link1Name": "Live Site",
-            "link2": "https://github.com",
+            "link2": "https://github.com/helen-mckay/photoalbum-v1",
             "link2Name": "Code",
             "story": "Password-protected photo album with comments section. Showcase version of a project I build for my friend. Username: 'site' Password: 'hihelen-s' ."
             },
