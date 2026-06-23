@@ -20,7 +20,7 @@ These days, I mostly build with Astro and a sprinkling of React. I am freelancin
 **Amigos de las Americas**<br/>*(2017)* | Audited site for performance and design issues. Built and styled the 2018 AMIGOS Summer Programs application (WordPress, Salesforce).
 
 ## Side adventures
-I keep falling into adventures outside of web development. I don't mind it, but I'd like web development to be my Main adventure for the time being!
+Occasionally I fall into adventures outside of web development.
 | Adventures | Details |
 |--- | --- |
 **Leticia Gutierrez Campaign<br/>(U.S. House, TX-09)**<br/>Campaign Manager<br/>*(2025 - 2026)*| Managed core team and volunteers. Managed software infrastructure (NGP VAN, Act Blue, Scale to Win, Action Network). Won the Democratic nomination.
